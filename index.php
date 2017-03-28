@@ -30,14 +30,22 @@ while($catquery->have_posts()) : $catquery->the_post();
 </div>
 </div>
 <div class="container">
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post();  ?>
 <article>
 	<img src="<?php bloginfo('template_url'); ?>/thumb.php?src=<?php get_image_url(); ?>&amp;w=353&amp;h=250&amp;zc=1" />
 
 	<div class="atitle"><div class="postDate"><?php the_time('d/m') ?></div><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></div>
 </article>
-
-<?php endwhile; else: ?>
+<?php endwhile; ?>
+<div class="pagination">
+<?php the_posts_pagination( array(
+    'mid_size' => 2,
+    'prev_text' => __( 'Anterior', 'textdomain' ),
+    'next_text' => __( 'Próximo', 'textdomain' ),
+) ); ?>
+</div>
+<?php else : ?>
+	<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 <?php endif; ?>
 </div>
 
@@ -54,6 +62,7 @@ while($catquery->have_posts()) : $catquery->the_post();
 </div>
 <iframe src="https://snapwidget.com/embed/348090" class="snapwidget-widget" allowTransparency="false" frameborder="0" scrolling="yes" style="border:none; overflow:hidden; width:353px; height:440px"></iframe>
 </div>
+
 </div>
 
 <?php get_footer(); ?>

@@ -1,10 +1,10 @@
 /*
 Theme Name: Aurora Brasil
 Theme URI: portalaurorabr.com
-Author: Aurora BR and VNCS
+Author: Aurora BR
 Author URI: xx      
 Description: 
-Version: 1.0
+Version: 1.2
 */
 @font-face {
     font-family: futura;
@@ -411,10 +411,10 @@ textarea {
 .page-numbers,
 .current {
     color: #331858;
-    padding: 10px 15px;
+    padding: 8px 15px;
     margin: 0 2px;
-    border-radius: 40px;
-    background: rgba(0, 0, 0, 0.05)
+    border-radius: 12px;
+    background: #fff;
 }
 
 .alignnone {
@@ -596,4 +596,20 @@ footer .menu li a:hover {
 .rTitle span {
     font-size: 13px;
     color: #fff;
+}
+
+
+/* Paginação da home */
+
+.pagination{
+    font-family: "futura";
+    font-weight: 600;
+    float: right;
+    height: 40px;
+    margin-top: 5px;
+}
+
+
+.pagination a:hover{
+    color: #8c77a9;
 }
