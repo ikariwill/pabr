@@ -1,0 +1,599 @@
+/*
+Theme Name: Aurora Brasil
+Theme URI: portalaurorabr.com
+Author: Aurora BR and VNCS
+Author URI: xx      
+Description: 
+Version: 1.0
+*/
+@font-face {
+    font-family: futura;
+    src: url(font/futura-book.woff);
+}
+
+@font-face {
+    font-family: futuralight;
+    src: url(font/futura-light.woff);
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800);
+body {
+    background: #e3e3e3;
+    font-family: "Open Sans", sans-serif;
+    margin: auto
+}
+
+a {
+    text-decoration: none;
+    color: #331858
+}
+
+.container {
+    width: 1080px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto
+}
+
+.metaslider .caption {
+    padding: 10px!important;
+    word-wrap: break-word;
+    text-transform: uppercase!important;
+    letter-spacing: 2px!important;
+    font-size: 14px!important
+}
+
+.nav {
+    text-transform: uppercase;
+    overflow: hidden;
+    margin-top: -100px;
+    position: relative;
+    background: #331858;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px 0;
+    width: 1080px;
+    font-weight: 600
+}
+
+.nav ul li {
+    display: inline-block
+}
+
+.nav ul li a {
+    font-size: 14px;
+    color: #fff;
+    padding: 10px 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-right: 3px solid #6337a0;
+}
+
+#slide {
+    width: 580px;
+    height: 305px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    background: #331858;
+}
+
+.vdestaque {
+    width: 490px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    background: #331858;
+    height: 220px;
+    margin-left: 10px;
+}
+
+.spotify {
+    margin-left: 0;
+    width: 490px;
+    float: right;
+    position: relative;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+#ads {
+    width: 728px;
+    height: 90px;
+    padding: 10px;
+    background: #331858;
+    overflow: hidden;
+    margin: 20px auto 30px;
+    position: relative
+}
+
+article {
+    width: 353px;
+    height: 250px;
+    float: left;
+    background: #000;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px
+}
+
+article:nth-child(2),
+article:nth-child(5),
+article:nth-child(8) {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.atitle {
+    display: block;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-family: "futura";
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px; 
+    text-transform: uppercase;
+
+}
+
+.atitle a {
+    color: #fff;
+    font-size: 24px;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.atitle a:hover{
+	color: #7858a5;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 15px;
+    z-index: 9999;
+    color: #fff;
+    font-family: "Open Sans";
+    font-weight: 800;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.title a {
+    color: #fff
+}
+
+.descri {
+    margin: 0;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: none;
+}
+
+.descri p {
+    margin: 0
+}
+
+.slide {
+    width: 100%;
+    position: relative;
+    height: 305px;
+}
+
+.slide:after {
+    position: absolute;
+    content: "";
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(51, 24, 88, 0.27) 11%, rgba(51, 24, 88, 0.58) 24%, rgba(51, 24, 88, 0.61) 28%, rgba(51, 24, 88, 0.68) 38%, rgba(51, 24, 88, 0.81) 64%, rgba(51, 24, 88, 0.82) 66%, rgba(51, 24, 88, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(51, 24, 88, 0.27) 11%, rgba(51, 24, 88, 0.58) 24%, rgba(51, 24, 88, 0.61) 28%, rgba(51, 24, 88, 0.68) 38%, rgba(51, 24, 88, 0.81) 64%, rgba(51, 24, 88, 0.82) 66%, rgba(51, 24, 88, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(51, 24, 88, 0.27) 11%, rgba(51, 24, 88, 0.58) 24%, rgba(51, 24, 88, 0.61) 28%, rgba(51, 24, 88, 0.68) 38%, rgba(51, 24, 88, 0.81) 64%, rgba(51, 24, 88, 0.82) 66%, rgba(51, 24, 88, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#331858', endColorstr='#150c22', GradientType=0);
+    display: inline-block;
+    bottom: 0;
+    z-index: 999;
+    width: 100%;
+    height: 150px;
+}
+
+.redes {
+    width: 353px;
+    height: 440px;
+    float: left;
+    background: #000;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 0;
+}
+
+.rt {
+    width: 210px;
+    height: 51px;
+    margin: 30px auto;
+    background: url(http://portalaurorabr.com/wp-content/uploads/2017/03/rt.png);
+    overflow: hidden;
+}
+
+.fb {
+    background: #3b589e;
+}
+
+.tt {
+    background: #15b9ee;
+}
+
+.ig {
+    background: #b08b70;
+    margin-right: 0;
+}
+
+footer {
+    width: 100%;
+    height: 307px;
+    position: relative;
+    margin-top: 10px;
+    background: url(http://portalaurorabr.com/wp-content/uploads/2017/03/footer.png) center no-repeat #301d4a;
+}
+
+footer .menu {
+    width: auto;
+    float: right;
+    margin-top: 50px;
+    padding: 10px 25px;
+
+}
+
+footer .menu li {
+    list-style: none;
+    font-family: "futuralight";
+    font-weight: 300;
+    text-transform: uppercase;
+
+}
+
+footer .menu li a {
+    color: #fff;
+    font-size: 30px;
+}
+
+.singlepost {
+    width: 700px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.post-header {
+    height: 400px;
+    width: 700px;
+    overflow: hidden;
+}
+
+.post-content {
+    width: 660px;
+    padding: 5px 20px;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    margin-bottom: 40px;
+}
+
+.post-title {
+    background: #331858;
+    padding: 15px 20px;
+    width: 660px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-family: Lato;
+    font-style: italic;
+    text-align: center;
+    color: #fff;
+}
+
+.autor {
+    font-size: 14px;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    display: block;
+    padding: 10px 0;
+}
+
+#sidebar {
+    width: 370px;
+    float: right;
+    overflow: hidden;
+    position: relative;
+}
+
+.boxtitle {
+    padding: 15px 0;
+    background: #331858;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.box {
+    height: 353px;
+    padding: 10px;
+    width: 350px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    background: #Fff;
+    margin-bottom: 50px
+}
+
+.comentarios {
+    background: #fff
+}
+
+.menu-menu-container {
+    float: left
+}
+
+#busca {
+    float: right;
+    overflow: hidden;
+    position: relative;
+    height: 52px;
+    padding: 0 10px;
+    background: #150c22;
+    width: 300px;
+    margin-right: 20px
+}
+
+input,
+textarea {
+    outline: none;
+    font-family: "Open Sans"
+}
+
+#s {
+    float: left;
+    background: transparent;
+    outline: none;
+    border: 0;
+    width: 235px;
+    color: #fff;
+    margin-left: 10px;
+    line-height: 52px;
+    text-align: left
+}
+
+#searchsubmit {
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: right;
+    font-size: 10px;
+    margin-top: 11px
+}
+
+.about {
+    width: 1350px;
+    background: #d8d8d8;
+    margin: 0 auto;
+    padding: 7px 0;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 14px
+}
+
+.paginacao {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+    padding: 25px 0;
+    text-align: center;
+    font-family: Open Sans;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 0;
+    position: relative;
+    display: block;
+    float: none;
+    background: rgba(0, 0, 0, 0.05)
+}
+
+.page-numbers,
+.current {
+    color: #331858;
+    padding: 10px 15px;
+    margin: 0 2px;
+    border-radius: 40px;
+    background: rgba(0, 0, 0, 0.05)
+}
+
+.alignnone {
+    margin: 5px 20px 20px 0
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto
+}
+
+.alignright {
+    float: right;
+    margin: 5px 0 20px 20px
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%;
+    padding: 5px 3px 10px;
+    text-align: center
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px
+}
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute!important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden
+}
+
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto!important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: .875rem;
+    font-weight: 700;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000
+}
+
+.cred {
+    width: 100%;
+    padding: 25px 0;
+    background: #1e1c1c;
+    color: #fff;
+    font-weight: 600;
+    font-family: "Open Sans";
+    letter-spacing: 3px;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cred a {
+    color: #331858;
+}
+
+.menu-menu-1-container {
+    float: left;
+}
+
+
+.postDate{
+	color: #fff;
+	font-style: 18px;
+	font-family: "futuralight";
+}
+
+
+/* Topo */
+
+.topo{
+	height: 530px;
+    background: url(http://portalaurorabr.com/wp-content/uploads/2017/03/topo.png) top center no-repeat #e3e3e3;
+    display: block;
+}
+
+/* Hover do menu */
+
+.nav ul li a:hover {
+    color: #7858a5;
+}
+
+/* footer */
+.logo-footer{
+	float: left;
+	margin-top: 20px;
+}
+
+/* Hover dos links do footer */
+
+footer .menu li a:hover {
+    color: #7858a5;
+}
+
+.menu {
+    padding-left: 20px;
+}
+
+.rTitle {
+    height: 45px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.rTitle h3 {
+    display: inline-block;
+    color: #fff;
+    margin: 10px;
+}
+
+.rTitle span {
+    font-size: 13px;
+    color: #fff;
+}
